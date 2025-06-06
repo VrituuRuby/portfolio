@@ -1,10 +1,14 @@
 import type { ReactNode } from "react";
-import { Container } from "./styles";
+import { Container, Wrapper } from "./styles";
 
 type Props = {
   children?: ReactNode;
 };
 
 export function ContentSection({ children }: Props) {
-  return <Container>{children}</Container>;
+  return (
+    <Container>
+      <Wrapper>{children}</Wrapper>
+    </Container>
+  );
 }

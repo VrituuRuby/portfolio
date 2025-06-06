@@ -5,11 +5,21 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Space Grotesk", sans-serif;
+  }
+
+  html, body {
+    height: 100vh;
+    overflow: hidden;
   }
 
   #root {
-    display: flex;
-    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
   }
+
 `;
