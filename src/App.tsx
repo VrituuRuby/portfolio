@@ -1,7 +1,13 @@
+import { ContentSection } from "./components/sections/content";
+import { HeroSection } from "./components/sections/hero";
+import { GlobalStyle } from "./styles/global-style";
+
 function App() {
   return (
     <>
-      <h1>Vritu</h1>
+      <GlobalStyle />
+      <HeroSection />
+      <ContentSection></ContentSection>
     </>
   );
 }
