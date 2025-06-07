@@ -6,6 +6,9 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Grotesk", sans-serif;
+    -webkit-font-smoothing: antialiased; /* Chrome/Safari */
+    -moz-osx-font-smoothing: grayscale;  /* Firefox */
+    text-rendering: optimizeLegibility;
   }
 
   html, body {

@@ -1,6 +1,7 @@
 import { AboutSection } from "./components/sections/about";
 import { ContentSection } from "./components/sections/content";
 import { HeroSection } from "./components/sections/hero";
+import { ProjectsSection } from "./components/sections/projects";
 import { GlobalStyle } from "./styles/global-style";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <ContentSection>
         <AboutSection />
+        <ProjectsSection />
       </ContentSection>
     </>
   );

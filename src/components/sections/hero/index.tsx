@@ -8,7 +8,7 @@ export function HeroSection() {
       <Content>
         <Greeting>Hello, I'm</Greeting>
         <Heading>Vrituu</Heading>
-        <SubHeading>FullStack Developer</SubHeading>
+        <SubHeading>FullStack Web Developer</SubHeading>
       </Content>
     </Container>
   );

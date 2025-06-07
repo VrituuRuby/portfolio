@@ -5,7 +5,7 @@ const BackgroundPan = keyframes`
     background-position: 0% 0%;
   }
   to {
-    background-position: 100% 0%;
+    background-position: -100% 0%;
   }
 `;
 
@@ -20,14 +20,15 @@ export const Container = styled.main`
     inset: 0;
     background-image: url("./wavy-pattern.png");
     mix-blend-mode: multiply;
-    opacity: 0.1;
-    animation: ${BackgroundPan} 30s linear infinite;
+    opacity: 0.125;
     z-index: -1;
+    background-size: 50%;
+    animation: ${BackgroundPan} 30s linear infinite;
+    will-change: background-position;
   }
 
   width: 100%;
   min-width: 100vw;
-  margin-top: -25px;
   clip-path: polygon(
     0% 15px,
     1.25% 0px,
@@ -116,9 +117,9 @@ export const Container = styled.main`
 `;
 
 export const Wrapper = styled.div`
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 25px;
 `;

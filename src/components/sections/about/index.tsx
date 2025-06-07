@@ -24,7 +24,7 @@ export function AboutSection() {
           />
           <Description>
             <h2>Victor "Vritu" Velozo</h2>
-            <h3>FullStack Webdeveloper</h3>
+            <h3>FullStack Web Developer</h3>
             <p>
               Desenvolvedor fullstack focado em criar aplicações web modernas e
               escaláveis - do design ao banco de dados.
@@ -40,8 +40,8 @@ export function AboutSection() {
         </Paragraph>
 
         <TechsContainer>
-          {technologies.map((tech) => (
-            <Technology>
+          {technologies.map((tech, i) => (
+            <Technology key={i}>
               {<tech.Icon />}
               {tech.name}
             </Technology>
