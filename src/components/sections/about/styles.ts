@@ -3,6 +3,12 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+`;
+
+export const AboutMe = styled.div`
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 `;
 
@@ -45,4 +51,34 @@ export const Description = styled.div`
     font-size: 1rem;
     line-height: 125%;
   }
+`;
+
+export const Skills = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+export const Paragraph = styled.p`
+  font-family: "Space Grotesk", sans-serif;
+  color: white;
+  width: 100%;
+`;
+
+export const TechsContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+`;
+
+export const Technology = styled.div`
+  display: flex;
+  gap: 0.25rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: medium;
+
+  padding: 0.25rem 1rem;
+  border-radius: 999px;
+  border: 1px solid ${({ theme }) => theme.primary};
 `;
