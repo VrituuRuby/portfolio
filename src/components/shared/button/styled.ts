@@ -10,7 +10,7 @@ export const Container = styled.button`
   padding: 2px;
   border: 0;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 0px 0px 0px transparent;
   font-size: 1rem;
 
@@ -30,9 +30,14 @@ export const Container = styled.button`
 `;
 
 export const Content = styled.p`
-  padding: 0.25rem 0.5rem;
   background-color: ${({ theme }) => theme.background}80;
   text-align: center;
   color: white;
-  border-radius: 6px;
+  border-radius: 4px;
+  padding: 0.25rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 `;

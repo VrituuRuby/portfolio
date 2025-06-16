@@ -10,6 +10,9 @@ import {
   Title,
 } from "./style";
 
+import GithubSvg from "@/assets/github.svg?react";
+import PlaySvg from "@/assets/play.svg?react";
+
 type Props = {
   project: Project;
 };
@@ -25,11 +28,13 @@ export function Project({ project }: Props) {
         <ActionContainer>
           {project.live_demo && (
             <Button as="a" target="_blank" href={project.live_demo}>
+              <PlaySvg />
               Acessar
             </Button>
           )}
           {project.github && (
             <Button as="a" target="_blank" href={project.github}>
+              <GithubSvg />
               Github
             </Button>
           )}
