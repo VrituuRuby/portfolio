@@ -18,4 +18,8 @@ export const Title = styled.h3`
 export const ProjectsContainer = styled.div`
   display: flex;
   gap: 1rem;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;

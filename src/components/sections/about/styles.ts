@@ -20,12 +20,19 @@ export const Title = styled.h3`
   font-family: "Press Start 2P", sans-serif;
   color: ${({ theme }) => theme.secondary};
   font-size: 2rem;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Wrap = styled.div`
   display: flex;
   gap: 2rem;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Image = styled.img`
@@ -33,6 +40,10 @@ export const Image = styled.img`
   width: 100%;
   border-radius: 100%;
   aspect-ratio: 1;
+  @media screen and (max-width: 768px) {
+    max-width: unset;
+    width: 80%;
+  }
 `;
 
 export const Description = styled.div`

@@ -5,6 +5,10 @@ export const ProjectCardContainer = styled.div`
   flex: 1;
   aspect-ratio: 5/7;
   position: relative;
+
+  @media screen and (max-width: 1024px) {
+    aspect-ratio: unset;
+  }
 `;
 
 export const Gradient = styled.div`
@@ -42,6 +46,7 @@ export const ProjectCard = styled.div`
   border: 1px solid black;
   transform-origin: 100% 0%;
   transition: transform 200ms ease, box-shadow 200ms ease;
+  gap: 0.5rem;
 
   &::before {
     content: "";
@@ -60,7 +65,7 @@ export const ProjectCard = styled.div`
     z-index: -1;
   }
 
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6),
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4),
     inset 0 -6px 40px ${({ theme }) => theme.primary}2E;
 
   ${ProjectCardContainer}:hover & {

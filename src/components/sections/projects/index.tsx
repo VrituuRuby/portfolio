@@ -1,6 +1,7 @@
 import { projects } from "../../../data";
+import { Title } from "../about/styles";
 import { Project } from "./components/project";
-import { Container, ProjectsContainer, Title } from "./styles";
+import { Container, ProjectsContainer } from "./styles";
 
 export function ProjectsSection() {
   return (

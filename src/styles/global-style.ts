@@ -15,15 +15,21 @@ export const GlobalStyle = createGlobalStyle`
     height: 100vh;
     overflow: hidden;
     background-color: ${({ theme }) => theme.primary};
+
   }
+
 
   #root {
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: overlay;
     width: 100vw;
     height: 100vh;
     perspective: 1px;
     transform-style: preserve-3d;
+
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+
   }
 
 `;
