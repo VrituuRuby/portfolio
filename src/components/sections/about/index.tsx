@@ -22,6 +22,7 @@ export function AboutSection() {
             src="https://avatars.githubusercontent.com/u/61244052?v=4"
             alt="Foto de perfil"
           />
+
           <Description>
             <h2>Victor "Vritu" Velozo</h2>
             <h3>FullStack Web Developer</h3>

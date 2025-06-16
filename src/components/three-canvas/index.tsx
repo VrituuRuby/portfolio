@@ -1,3 +1,4 @@
+import { theme } from "@/styles/theme";
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
@@ -26,7 +27,7 @@ export default function ThreeCanvas() {
     const gridHelper = new THREE.GridHelper(200, 50);
     // scene.add(gridHelper);
 
-    scene.background = new THREE.Color().setHex(0x865dff);
+    scene.background = new THREE.Color(theme.primary);
 
     const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -58,9 +59,11 @@ export default function ThreeCanvas() {
 
     const loader = new GLTFLoader();
 
-    const material = new THREE.MeshStandardMaterial({ color: 0xb0a0ff });
-    const ambientLight = new THREE.AmbientLight(0xffffff, 2);
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+    const material = new THREE.MeshStandardMaterial({
+      color: new THREE.Color(theme["mesh-material"]),
+    });
+    const ambientLight = new THREE.AmbientLight(0xffffff, 2.7);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
     scene.add(ambientLight);
     scene.add(directionalLight);
 

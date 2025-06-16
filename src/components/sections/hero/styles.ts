@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+import AmbigramVector from "@/assets/ambigram.svg?react";
 
 export const Container = styled.header`
   width: 100vw;
@@ -24,6 +25,10 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   transform: translateZ(-0.5px) scale(1.5) !important;
+`;
+
+export const VectorAmbigram = styled(AmbigramVector)`
+  filter: drop-shadow(-10px 8px 0 rgba(0, 0, 0, 0.5));
 `;
 
 export const Greeting = styled.p`

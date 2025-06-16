@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   html, body {
     height: 100vh;
     overflow: hidden;
+    background-color: ${({ theme }) => theme.primary};
   }
 
   #root {
