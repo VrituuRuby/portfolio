@@ -12,6 +12,7 @@ export const Container = styled.button`
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 0px 0px 0px transparent;
+  font-size: 1rem;
 
   transition: box-shadow, transform, 100ms ease-in-out;
 

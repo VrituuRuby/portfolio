@@ -121,5 +121,6 @@ export const Wrapper = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 0 2rem;
   padding-top: 25px;
 `;

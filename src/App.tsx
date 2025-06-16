@@ -1,4 +1,5 @@
 import { AboutSection } from "./components/sections/about";
+import { ContactFormSection } from "./components/sections/contact-form";
 import { ContentSection } from "./components/sections/content";
 import { HeroSection } from "./components/sections/hero";
 import { ProjectsSection } from "./components/sections/projects";
@@ -12,6 +13,7 @@ function App() {
       <ContentSection>
         <AboutSection />
         <ProjectsSection />
+        <ContactFormSection />
       </ContentSection>
     </>
   );
