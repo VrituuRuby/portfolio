@@ -178,7 +178,12 @@ export default function ThreeCanvas() {
     <canvas
       ref={canvasRef}
       id="bg"
-      style={{ display: "block", width: "100vw", height: "100vh" }}
+      style={{
+        display: "absolute",
+        width: "100vw",
+        height: "100vh",
+        pointerEvents: "none",
+      }}
     />
   );
 }
