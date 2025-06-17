@@ -29,7 +29,7 @@ export const Content = styled.div`
 
 export const VectorAmbigram = styled(AmbigramVector)`
   filter: drop-shadow(-10px 8px 0 rgba(0, 0, 0, 0.5));
-
+  width: 500px;
   @media screen and (max-width: 768px) {
     width: 200px;
   }
