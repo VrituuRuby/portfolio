@@ -17,7 +17,7 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   width: 100%;
-  background-color: transparent;
+  background-color: rgb(255 255 255 / 10%);
   border: 1px solid ${({ theme }) => theme.secondary};
   border-radius: 4px;
   font-size: 1rem;
@@ -34,7 +34,7 @@ export const Input = styled.input`
 `;
 
 export const TextArea = styled.textarea`
-  background-color: transparent;
+  background-color: rgb(255 255 255 / 10%);
   border: 1px solid ${({ theme }) => theme.secondary};
   border-radius: 4px;
   font-size: 1rem;
